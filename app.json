@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Recipe App",
+    "githubUrl": "https://github.com/Farjana51195/RecipeApp"
   }
 }

@@ -13,6 +13,9 @@
     "react-native-elements": "^1.1.0",
     "react-navigation": "^3.11.0"
   },
+  "rnpm": {
+    "assets": ["./assets/fonts"]
+   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
   },
