@@ -18,7 +18,8 @@ const styles = {
   title: {
     fontSize: 18,
     color: "#303030",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontStyle: "italic"
   },
 
   publisher: {

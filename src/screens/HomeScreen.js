@@ -337,9 +337,10 @@ const DATA = [
 
 export default class HomeScreen extends Component {
   static navigationOptions = {
-    headerTitleStyle: { textAlign: "center", flex: 1 },
-    title: "Recipe List",
+    headerTitleStyle: { textAlign: "center", flex: 1, fontStyle: "italic" },
+    title: "RECIPE LIST",
     headerTintColor: "#ddd",
+
     headerStyle: { backgroundColor: "#9806a8" }
   };
   constructor(props) {

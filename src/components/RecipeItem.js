@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, Linking } from "react-native";
 import Card from "./common/Card";
 import RecipeText from "./common/RecipeText";
 import Button from "./common/Button";
@@ -28,8 +28,18 @@ export default class RecipeItem extends Component {
 
           <RecipeText title={item.title} publisher={item.publisher} />
         </View>
-
-        <Button onPress={this.gotoDetail} title="View more" />
+        <View style={{ flexDirection: "row", padding: 20 }}>
+          <Button
+            customStyle={{ flex: 1 }}
+            onPress={this.gotoDetail}
+            title="Details"
+          />
+          <Button
+            customStyle={{ flex: 1, marginLeft: 5, backgroundColor: "#60AF10" }}
+            onPress={() => Linking.openURL(item.source_url)}
+            title="URL"
+          />
+        </View>
       </Card>
     );
   }
